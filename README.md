@@ -5,3 +5,4 @@
 ### Tools
 
 used Nltk library
+used tqdm to show loading bar
