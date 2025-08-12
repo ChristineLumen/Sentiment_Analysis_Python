@@ -9,6 +9,8 @@ In total, it includes 15 columns and 7,394 rows.
 Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandise-sales">Kaggle, Merchandise Sales</a>
 
 ### Tools
-
+python
 used Nltk library
+RoBERTA
+VADER
 used tqdm to show loading bar
