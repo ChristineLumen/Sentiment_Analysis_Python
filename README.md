@@ -1,4 +1,4 @@
-# Sentiment_Analysis_Python
+# Sentiment_Analysis_VADER vs RoBERTa
 
 ### Project Overview
 This project will perform sentiment analysis by comparing two models: VADER (a lexicon-based sentiment model) and RoBERTa (a pre-trained model for sentiment classification). The goal is to determine which model provides more accurate results and performs better.
