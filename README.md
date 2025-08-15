@@ -10,11 +10,14 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 
 ### Tools
 * Python
-    * NLTK - used to train, test, and build the model
-      * nltk.sentiment
-    * seaborn - define and compile the model
-    * tqdm - saving trained model in .keras format
-    * transformers
     * matplotlib
     * numpy
+    * seaborn 
+    * tqdm
+    * NLTK 
+      * nltk.sentiment
+    
+    * transformers
+    
 
+### 
