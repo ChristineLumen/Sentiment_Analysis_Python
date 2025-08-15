@@ -14,9 +14,10 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
     * numpy
     * seaborn 
     * tqdm
-    * NLTK 
+    * NLTK
+ VADER
       * nltk.sentiment
-    
+ RoBERTa   
     * transformers
     
 
