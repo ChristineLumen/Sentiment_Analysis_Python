@@ -15,10 +15,11 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
     * seaborn 
     * tqdm
     * NLTK
- VADER
-      * nltk.sentiment
- RoBERTa   
-    * transformers
+       - VADER
+            * `nltk.sentiment.SentimentIntensityAnalyzer`
+       - RoBERTa   
+            * transformers
+            * scipy.special
     
 
 ### 
