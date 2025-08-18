@@ -21,8 +21,14 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
             * transformers
             * scipy.special
     
-
-### Building Model
+### Running Model
+ - VADER
+   Is usually used for small-text 
+ - RoBERTa 
+   
 ### Accuracy
+For measure model's accuracy I run regression metrics (MSE, MAE, Correlation), so I can evaluate how close the model's sentiment labels to human rating. 
+      - from `sklearn.metrics` import `mean_squared_error`, `mean_absolute_error`
+      - from `scipy.stats` import `pearsonr, spearmanr`
 ### Results
 
