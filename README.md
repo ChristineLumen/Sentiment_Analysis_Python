@@ -22,7 +22,7 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
             * scipy.special
     
 ### Running Model
- - VADER
+ - VADER<br>
    Is usually used for small-text 
  - RoBERTa 
    
