@@ -24,6 +24,8 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 ### Running Model
  - VADER<br>
   I ran the VADER model and plotted its results. First, I generated four polarity scores (negative, neutral, positive, compound) for each review. For this purpose, I used `nltk.sentiment.SentimentIntensityAnalyzer`. Then, I stored these scores in lists, added them as new columns to my DataFrame and finally exported the DataFrame to an Excel file. Lastly, I used `sns.barplot` and `plt.subplots` to visualize the results.
+<img width="900" height="300" alt="Vader_sentiment" src="https://github.com/user-attachments/assets/fa64a44f-c411-4cc1-9a78-3829ddea7d5f" />
+
  - RoBERTa 
    
 ### Accuracy
