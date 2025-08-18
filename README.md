@@ -28,11 +28,11 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
    
 ### Accuracy
 For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and Spearman correlations) to evaluate how close the model’s sentiment predictions are to human ratings:
-* <b>Size of errors<b> – how far off the predictions are from actual ratings
-      ** `sklearn.metrics.mean_squared_error`
-      ** `sklearn.metrics.mean_absolute_error`
+* <b>Size of errors</b> – how far off the predictions are from actual ratings
+      * `sklearn.metrics.mean_squared_error`
+      * `sklearn.metrics.mean_absolute_error`
 * <b>Pattern/trend alignment</b> – how well the model captures the overall sentiment trends
-      ** `scipy.stats.pearsonr` (linear correlation)
-      ** `scipy.stats.spearmanr` (rank correlation)
+      * `scipy.stats.pearsonr` (linear correlation)
+      * `scipy.stats.spearmanr` (rank correlation)
 ### Results
 
