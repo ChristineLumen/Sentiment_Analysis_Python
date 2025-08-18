@@ -27,7 +27,7 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
  - RoBERTa 
    
 ### Accuracy
-For measure model's accuracy I run regression metrics (MSE, MAE, Correlation), so I can evaluate how close the model's sentiment labels to human rating. 
+For measure model's accuracy I run regression metrics (MSE, MAE, Correlation), so I can evaluate how close the model's sentiment labels to human rating.</br> 
       - from `sklearn.metrics` import `mean_squared_error`, `mean_absolute_error`
       - from `scipy.stats` import `pearsonr, spearmanr`
 ### Results
