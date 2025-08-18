@@ -23,7 +23,7 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
     
 ### Running Model
  - VADER<br>
-   Is usually used for small-text 
+  I ran the VADER model and plotted its results. First, I generated four polarity scores (negative, neutral, positive, compound) for each review. For this purpose, I used `nltk.sentiment.SentimentIntensityAnalyzer`. Then, I stored these scores in lists, added them as new columns to my DataFrame and finally exported the DataFrame to an Excel file. Lastly, I used `sns.barplot` and `plt.subplots` to visualize the results.
  - RoBERTa 
    
 ### Accuracy
