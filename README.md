@@ -33,7 +33,7 @@ For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and S
       * `sklearn.metrics.mean_absolute_error`
 * <b>Pattern/trend alignment</b> – how well the model captures the overall sentiment trends<br>
       * `scipy.stats.pearsonr` (linear correlation)<br>
-      * `scipy.stats.spearmanr` (rank correlation)
+      * `scipy.stats.spearmanr` (rank correlation)<br>
   <img width="495" height="100" alt="Screenshot 2025-08-17 at 11 12 41 PM" src="https://github.com/user-attachments/assets/4146d370-b448-414c-aaf4-0e1f4a1ddd10" />
 
 ### Results
