@@ -22,4 +22,7 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
             * scipy.special
     
 
-### 
+### Building Model
+### Accuracy
+### Results
+
