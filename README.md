@@ -9,17 +9,18 @@ In total, it includes 15 columns and 7,394 rows.
 Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandise-sales">Kaggle, Merchandise Sales</a>
 
 ### Tools
-* Python
-    * matplotlib
-    * numpy
-    * seaborn 
-    * tqdm
-    * NLTK
-       - VADER
-            * `nltk.sentiment.SentimentIntensityAnalyzer`
-       - RoBERTa   
-            * transformers
-            * scipy.special
+**Python libraries:**  
+- `matplotlib` – visualization  
+- `numpy` – numerical computing  
+- `seaborn` – statistical plots  
+- `tqdm` – progress bars  
+
+**Sentiment analysis models:**  
+- **VADER**  
+  - `nltk.sentiment.SentimentIntensityAnalyzer`  
+- **RoBERTa**  
+  - `transformers`  
+  - `scipy.special` 
     
 ### Running Model
  - VADER<br>
