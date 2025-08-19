@@ -41,4 +41,4 @@ For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and S
   <img width="495" height="100" alt="Screenshot 2025-08-17 at 11 12 41 PM" src="https://github.com/user-attachments/assets/4146d370-b448-414c-aaf4-0e1f4a1ddd10" />
 
 ### Results
-
+Based on the results from both models, I created a scatter plot comparing each model’s predictions with the human ratings to show how closely each model captures them.
