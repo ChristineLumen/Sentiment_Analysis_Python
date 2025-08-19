@@ -28,6 +28,8 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 
  - RoBERTa<br> 
    Next I run RoBERTa model as it offers deeper analysis and is better at capturing contexstual differences in review. So for RoBERTa I started with uploading a pretrained model `f'cardiffnlp/twitter-roberta-base-sentiment'` with `transformers.AutoModelForSequenceClassification` and applied `scipy.special.softmax` to get the probability scores.
+   <img width="885" height="295" alt="Screenshot 2025-08-19 at 5 18 05 PM" src="https://github.com/user-attachments/assets/844f37c6-fb95-463d-81de-2ae1d3bebc26" />
+
 ### Accuracy
 For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and Spearman correlations) to evaluate how close the model’s sentiment predictions are to human ratings:
 * <b>Size of errors</b> – how far off the predictions are from actual ratings<br>
