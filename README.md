@@ -27,7 +27,7 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 <img width="900" height="300" alt="Vader_sentiment" src="https://github.com/user-attachments/assets/fa64a44f-c411-4cc1-9a78-3829ddea7d5f" />
 
  - RoBERTa<br> 
-   Next I run RoBERTa model as it offers deeper analysis and is better at capturing contextstual differences in review. So for RoBERTa I started with `transformers.AutoModelForSequenceClassification` and `scipy.special.softmax` uploading model `f'cardiffnlp/twitter-roberta-base-sentiment'`
+   Next I run RoBERTa model as it offers deeper analysis and is better at capturing contexstual differences in review. So for RoBERTa I started with uploading a pretrained model `f'cardiffnlp/twitter-roberta-base-sentiment'` with `transformers.AutoModelForSequenceClassification` and applied `scipy.special.softmax` to get the probability scores.
 ### Accuracy
 For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and Spearman correlations) to evaluate how close the model’s sentiment predictions are to human ratings:
 * <b>Size of errors</b> – how far off the predictions are from actual ratings<br>
