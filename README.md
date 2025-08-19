@@ -26,8 +26,8 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
   I ran the VADER model and plotted its results. First, I generated four polarity scores (negative, neutral, positive, compound) for each review. For this purpose, I used `nltk.sentiment.SentimentIntensityAnalyzer`. Then, I stored these scores in lists, added them as new columns to my DataFrame and finally exported the DataFrame to an Excel file. Lastly, I used `sns.barplot` and `plt.subplots` to visualize the results.
 <img width="900" height="300" alt="Vader_sentiment" src="https://github.com/user-attachments/assets/fa64a44f-c411-4cc1-9a78-3829ddea7d5f" />
 
- - RoBERTa 
-   Next I run RoBERTa model as it offers deeper analysis and can catch the contextstual differences of the messages
+ - RoBERTa<br> 
+   Next I run RoBERTa model as it offers deeper analysis and is better at capturing contextstual differences in review. So for RoBERTa I started with `transformers.AutoModelForSequenceClassification` and `scipy.special.softmax` uploading model `f'cardiffnlp/twitter-roberta-base-sentiment'`
 ### Accuracy
 For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and Spearman correlations) to evaluate how close the model’s sentiment predictions are to human ratings:
 * <b>Size of errors</b> – how far off the predictions are from actual ratings<br>
