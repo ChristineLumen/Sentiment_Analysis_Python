@@ -44,5 +44,8 @@ For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and S
 ### Results
 Based on the results from both models, I created a scatter plot comparing each model’s predictions with the human ratings to show how closely they align.<br>
 * VADER: Spread out, less aligned 
-* RoBERTa: Clustered, aligned with trends → stronger correlations (Pearson 0.85, Spearman 0.74)
+* RoBERTa: Clustered, aligned with trends → stronger correlations (Pearson 0.85, Spearman 0.74) --  tracks the ups/downs of human ratings better
 <img width="572" height="563" alt="Screenshot 2025-08-17 at 8 46 33 PM" src="https://github.com/user-attachments/assets/7e326752-a008-4f29-8be4-4bf52dd10420" />
+
+* VADER is rough and less reliable for predicting exact ratings.
+* RoBERTa captures trends much better and can rank reviews correctly, however, numeric predictions are not exactly on the rating scale.
