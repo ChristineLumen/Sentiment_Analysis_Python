@@ -33,8 +33,8 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 
 ### Accuracy
 First, I rescaled the predictions to a 1–5 rating range for both models so they match the human ratings, since originally they were in the range of –1 to 1. For this, I used:
-      * y_pred_vader_scaled = 2 * (df['vader_compound'] + 1)  -- shifts the range and stretches it to [0, 4]
-      * y_pred_vader_scaled = y_pred_vader_scaled + 1 -- shifts again to [1, 5]
+      * `y_pred_vader_scaled = 2 * (df['vader_compound'] + 1)`  -- shifts the range and stretches it to [0, 4]
+      * `y_pred_vader_scaled = y_pred_vader_scaled + 1` -- shifts again to [1, 5]
 For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and Spearman correlations) to evaluate how close the model’s sentiment predictions are to human ratings:
 * <b>Size of errors</b> – how far off the predictions are from actual ratings<br>
       * `sklearn.metrics.mean_squared_error`<br>
@@ -48,7 +48,7 @@ As you can see, VADER is almost always off by about 1 rating point, which means 
 ### Results
 Based on the results from both models, I created a scatter plot comparing each model’s predictions with the human ratings to show how closely they align.<br>
 * VADER: Spread out, less aligned 
-* RoBERTa: Clustered, aligned with trends → stronger correlations (Pearson 0.85, Spearman 0.74) --  tracks the ups/downs of human ratings better<br>
+* RoBERTa: Clustered, aligned with trends → tracks the ups/downs of human ratings better<br>
 <img width="526" height="555" alt="Screenshot 2025-08-19 at 10 49 55 PM" src="https://github.com/user-attachments/assets/d8897744-8f69-4495-beb2-100de9507b03" /><br>
 Based on the chart, we can see that VADER has a moderate correlation with human ratings, meaning it captures general trends but weak on nuanced context. On the other hand, RoBERTa has a stronger correlation with human rating both in terms of linear trend(Pearson) and rank ordering (Spearman).
  
