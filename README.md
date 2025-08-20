@@ -32,6 +32,9 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
    <img width="885" height="295" alt="Screenshot 2025-08-19 at 5 18 05 PM" src="https://github.com/user-attachments/assets/844f37c6-fb95-463d-81de-2ae1d3bebc26" />
 
 ### Accuracy
+First, I rescaled the predictions to a 1–5 rating range for both models so they match the human ratings, since originally they were in the range of –1 to 1. For this, I used:
+      * y_pred_vader_scaled = 2 * (df['vader_compound'] + 1)  -- shifts the range and stretches it to [0, 4]
+      * y_pred_vader_scaled = y_pred_vader_scaled + 1 -- shifts again to [1, 5]
 For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and Spearman correlations) to evaluate how close the model’s sentiment predictions are to human ratings:
 * <b>Size of errors</b> – how far off the predictions are from actual ratings<br>
       * `sklearn.metrics.mean_squared_error`<br>
@@ -39,13 +42,14 @@ For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and S
 * <b>Pattern/trend alignment</b> – how well the model captures the overall sentiment trends<br>
       * `scipy.stats.pearsonr` (linear correlation)<br>
       * `scipy.stats.spearmanr` (rank correlation)<br>
-  <img width="495" height="100" alt="Screenshot 2025-08-17 at 11 12 41 PM" src="https://github.com/user-attachments/assets/4146d370-b448-414c-aaf4-0e1f4a1ddd10" />
+<img width="318" height="98" alt="Screenshot 2025-08-19 at 10 48 37 PM" src="https://github.com/user-attachments/assets/0fd835f0-2513-4fd5-95d0-5ce6f0c21616" />
+As you can see, VADER is almost always off by about 1 rating point, which means it can make larger errors. In contrast, RoBERTa is closer to the human ratings and less prone to mistakes.
 
 ### Results
 Based on the results from both models, I created a scatter plot comparing each model’s predictions with the human ratings to show how closely they align.<br>
 * VADER: Spread out, less aligned 
 * RoBERTa: Clustered, aligned with trends → stronger correlations (Pearson 0.85, Spearman 0.74) --  tracks the ups/downs of human ratings better
-<img width="572" height="563" alt="Screenshot 2025-08-17 at 8 46 33 PM" src="https://github.com/user-attachments/assets/7e326752-a008-4f29-8be4-4bf52dd10420" />
+<img width="526" height="555" alt="Screenshot 2025-08-19 at 10 49 55 PM" src="https://github.com/user-attachments/assets/d8897744-8f69-4495-beb2-100de9507b03" />
 
 * VADER is rough and less reliable for predicting exact ratings.
 * RoBERTa captures trends much better and can rank reviews correctly, however, numeric predictions are not exactly on the rating scale.
