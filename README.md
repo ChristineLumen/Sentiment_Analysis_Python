@@ -49,7 +49,7 @@ As you can see, VADER is almost always off by about 1 rating point, which means 
 Based on the results from both models, I created a scatter plot comparing each model’s predictions with the human ratings to show how closely they align.<br>
 * VADER: Spread out, less aligned 
 * RoBERTa: Clustered, aligned with trends → stronger correlations (Pearson 0.85, Spearman 0.74) --  tracks the ups/downs of human ratings better<br>
-<img width="526" height="555" alt="Screenshot 2025-08-19 at 10 49 55 PM" src="https://github.com/user-attachments/assets/d8897744-8f69-4495-beb2-100de9507b03" />
+<img width="526" height="555" alt="Screenshot 2025-08-19 at 10 49 55 PM" src="https://github.com/user-attachments/assets/d8897744-8f69-4495-beb2-100de9507b03" /><br>
 Based on the chart, we can see that VADER has a moderate correlation with human ratings, meaning it captures general trends but weak on nuanced context. On the other hand, RoBERTa has a stronger correlation with human rating both in terms of linear trend(Pearson) and rank ordering (Spearman).
  
 * VADER is simplier and works well for predict sentiment polarity.
