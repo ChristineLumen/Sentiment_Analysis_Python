@@ -42,7 +42,7 @@ For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and S
 * <b>Pattern/trend alignment</b> – how well the model captures the overall sentiment trends<br>
       * `scipy.stats.pearsonr` (linear correlation)<br>
       * `scipy.stats.spearmanr` (rank correlation)<br>
-<img width="318" height="98" alt="Screenshot 2025-08-19 at 10 48 37 PM" src="https://github.com/user-attachments/assets/0fd835f0-2513-4fd5-95d0-5ce6f0c21616" />
+<img width="318" height="98" alt="Screenshot 2025-08-19 at 10 48 37 PM" src="https://github.com/user-attachments/assets/0fd835f0-2513-4fd5-95d0-5ce6f0c21616" /><br>
 As you can see, VADER is almost always off by about 1 rating point, which means it can make larger errors. In contrast, RoBERTa is closer to the human ratings and less prone to mistakes.
 
 ### Results
