@@ -33,7 +33,7 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 
 ### Accuracy
 First, I rescaled the predictions to a 1–5 rating range for both models so they match the human ratings, since originally they were in the range of –1 to 1. For this, I used:<br>
-      * `y_pred_vader_scaled = 2 * (df['vader_compound'] + 1)`  -- shifts the range and stretches it to [0, 4]
+      * `y_pred_vader_scaled = 2 * (df['vader_compound'] + 1)`  -- shifts the range and stretches it to [0, 4] <br>
       * `y_pred_vader_scaled = y_pred_vader_scaled + 1` -- shifts again to [1, 5]<br>
 For measuring model accuracy, I used regression metrics (MSE, MAE, Pearson and Spearman correlations) to evaluate how close the model’s sentiment predictions are to human ratings:
 * <b>Size of errors</b> – how far off the predictions are from actual ratings<br>
