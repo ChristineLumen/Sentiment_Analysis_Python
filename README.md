@@ -19,8 +19,8 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 - **VADER**  
   - `nltk.sentiment.SentimentIntensityAnalyzer`  
 - **RoBERTa**  
-  - `transformers`  
-  - `scipy.special` 
+  - `transformers`
+  - `scipy.special`
     
 ### Running Model
  - VADER<br>
