@@ -11,7 +11,7 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 ### Tools
 **Python libraries:**  
 - `matplotlib` – visualization  
-- `numpy` – numerical computing  
+- `numpy` – numerical computing
 - `seaborn` – statistical plots
 - `tqdm` – progress bars
 
