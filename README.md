@@ -15,7 +15,7 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 - `seaborn` – statistical plots
 - `tqdm` – progress bars
 
-**Sentiment analysis models:**  
+**Sentiment analysis models:**
 - **VADER**  
   - `nltk.sentiment.SentimentIntensityAnalyzer`  
 - **RoBERTa**  
