@@ -13,7 +13,7 @@ Source: <a href="https://www.kaggle.com/datasets/adarsh0806/influencer-merchandi
 - `matplotlib` – visualization 
 - `numpy` – numerical computing
 - `seaborn` – statistical plots
-- `tqdm` – progress bars
+- `tqdm` – progress bars 
 
 **Sentiment analysis models:**
 - **VADER**  
